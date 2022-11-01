@@ -1,0 +1,20 @@
+.tasks {
+    &__content {
+        @include flex(flex, space-between, center);
+    }
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+        max-width: 50%;
+    }
+    &__num {
+        // font-family: SF Pro Display;
+        font-weight: 900;
+        font-size: 200px;
+        color: #333;
+    }
+    &__descr {
+        @include font(22px, normal, #333333);
+    }
+}

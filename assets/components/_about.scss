@@ -1,0 +1,20 @@
+.about {
+    &__descr {
+        @include font(16px, 300, #000000);
+        margin: 20px 0;
+    }
+    &__content{
+        @include flex(flex, space-between, center);
+    }
+    &__left{
+        @include flex(flex, center, center);
+        img{
+            margin: 15px;
+            display: flex;
+            align-self: center;
+        }
+    }
+    &__right{
+        max-width: 41.12%;
+    }
+}

@@ -1,0 +1,46 @@
+.btn {
+    width: 222px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__white {
+        background: #fff;
+        &:hover svg {
+            margin-left: 20px;
+        }
+        svg {
+            transition: 0.2s;
+            margin-left: 15px;
+        }
+    }
+    &__black {
+        background: #333333;
+        &:hover svg {
+            margin-left: 20px;
+        }
+        svg {
+            transition: 0.2s;
+            margin-left: 15px;
+        }
+    }
+    &__slide {
+        width: 53px;
+        height: 53px;
+        background: #f9f9f9;
+        border: 1px solid #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after {
+            content: "";
+        }
+    }
+}
+
+.page__title {
+    font-family: "TT Hoves";
+    font-weight: 300;
+    font-size: 64px;
+    color: #bdbdbd;
+}

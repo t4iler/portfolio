@@ -1,0 +1,44 @@
+.projects{
+    &__content{
+        @include flex(flex, space-between , center, wrap);
+    }
+    &__img{
+        margin-bottom: 30px;
+    }
+    &__title{
+        margin-bottom: 60px;
+    }
+    &__wrapper{
+        background: rgba(33, 33, 33, 0.8);
+        color: white;
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 34px);
+        padding: 48px 78px 0 79px;
+        box-sizing: border-box;
+        top: -100%;
+        transition: 0.3s;
+
+
+    }
+    &__name{
+        @include font(64px, 700, white);
+    }
+    &__btn{
+        @include font(12px, 400, white);
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        background: transparent;
+        svg{
+            margin-left: 15px;
+        }
+       
+    }
+    &__border{
+        position: relative;
+        overflow: hidden;
+        &:hover .projects__wrapper{
+            top: 0;
+        }
+    }
+}

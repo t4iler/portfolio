@@ -1,0 +1,15 @@
+@mixin font($size, $weight, $color) {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin flex($display, $justify, $align, $wrap: nowrap) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
